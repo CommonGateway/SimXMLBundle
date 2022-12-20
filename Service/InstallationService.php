@@ -1,7 +1,7 @@
 <?php
 
 // src/Service/InstallationService.php
-namespace CommonGateway\PetStoreBundle\Service;
+namespace CommonGateway\SimXmlBundle\Service;
 
 use App\Entity\DashboardCard;
 use App\Entity\Endpoint;

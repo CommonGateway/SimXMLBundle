@@ -1,16 +1,16 @@
 <?php
 
-namespace CommonGateway\PetStoreBundle\ActionHandler;
+namespace CommonGateway\SimXmlBundle\ActionHandler;
 
-use CommonGateway\PetStoreBundle\Service\PetStoreService;
+use CommonGateway\SimXmlBundle\Service\SimXmlService;
 
-class PetStoreHandler
+class SimXmlHandler
 {
-    private PetStoreService $petStoreService;
+    private SimXmlService $simXmlService;
 
-    public function __construct(PetStoreService $petStoreService)
+    public function __construct(SimXmlService $simXmlService)
     {
-        $this->petStoreService = $petStoreService;
+        $this->simXmlService = $simXmlService;
     }
 
     /**
@@ -23,7 +23,7 @@ class PetStoreHandler
         return [
             '$id'         => 'https://example.com/person.schema.json',
             '$schema'     => 'https://json-schema.org/draft/2020-12/schema',
-            'title'       => 'PetStore Action',
+            'title'       => 'SimXml Action',
             'description' => 'This handler returns a welcoming string',
             'required'    => [],
             'properties'  => [],
@@ -45,6 +45,6 @@ class PetStoreHandler
      */
     public function run(array $data, array $configuration): array
     {
-        return $this->petStoreService->petStoreHandler($data, $configuration);
+        return $this->simXmlService->simXmlHandler($data, $configuration);
     }
 }
