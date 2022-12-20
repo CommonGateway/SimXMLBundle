@@ -1,0 +1,42 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/sim.metaData.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "MetaData",
+    "type": "object",
+    "properties":{
+        "id": {
+            "type": "string"
+        },
+        "zaaktype": {
+            "type": "string"
+        },
+        "zaakId": {
+            "type": "string"
+        },
+        "code_kanaal": {
+            "type": "string"
+        },
+        "code_medewerker": {
+            "type": "string"
+        },
+        "indiener": {
+            "type": "string"
+        },
+        "indienersoort": {
+            "type": "string"
+        },
+        "betrouwbaarheid_identificatie": {
+            "type": "string"
+        },
+        "betrouwbaarheid_naw": {
+            "type": "string"
+        },
+        "oGone_orderId": {
+            "type": "string"
+        },
+        "oGone_status": {
+            "type": "string"
+        }
+    }
+}

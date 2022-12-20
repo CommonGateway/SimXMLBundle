@@ -1,0 +1,26 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/sim.bijlage.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "Bijlage",
+    "type": "object",
+    "properties":{
+        "naam": {
+            "type": "string"
+        },
+        "omschrijving": {
+            "type": "string"
+        },
+        "inhoud": {
+            "type": "array",
+            "items": {
+                "contentType": {
+                    "type": "string"
+                },
+                "content": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

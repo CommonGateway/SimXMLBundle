@@ -1,0 +1,35 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/sim.simXml.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "SimXml",
+    "type": "object",
+    "properties": {
+      "stuurgegevens": {
+        "$ref": "#/definitions/Stuurgegevens"
+      },
+      "body": {
+        "$ref": "#/definitions/Body"
+      },
+      "bijlagen": {
+        "$ref": "#/definitions/Bijlage"
+      },
+      "zgwZaak": {
+        "type": "string"
+      },
+      "zgwDocumenten": {
+        "type": "array"
+      },
+      "parameters": {
+        "type": "array",
+        "items": {
+          "mutatiesoort": {
+            "type": "string"
+          },
+          "indicatorOvername": {
+            "type": "string"
+          }
+        }
+      }
+  } 
+}
