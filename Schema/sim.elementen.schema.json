@@ -1,0 +1,105 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/sim.elementen.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "Elementen",
+    "type": "object",
+    "properties":{
+        "bsn": {
+            "type": "string"
+        },
+        "voorletters": {
+            "type": "string"
+        },
+        "voorvoegsel": {
+            "type": "string"
+        },
+        "achternaam":{
+            "type": "string"
+        },
+        "geslacht": {
+            "type": "string"
+        },
+        "straatnaam": {
+            "type": "string"
+        },
+        "huisnummer": {
+            "type": "string"
+        },
+        "postcode": {
+            "type": "string"
+        },
+        "woonplaats": {
+            "type": "string"
+        },
+        "telefoonnummer": {
+            "type": "string"
+        },
+        "emailadres": {
+            "type": "string"
+        },
+        "gemeentecode": {
+            "type": "string"
+        },
+        "adresregel1": {
+            "type": "string"
+        },
+        "adresregel2": {
+            "type": "string"
+        },
+        "landcode": {
+            "type": "string"
+        },
+        "datumVertrek": {
+            "type": "string"
+        },
+        "straatnaam_nieuw": {
+            "type": "string"
+        },
+        "huisnummer_nieuw": {
+            "type": "string"
+        },
+        "huisletter_nieuw": {
+            "type": "string"
+        },
+        "huisnummertoevoeging_nieuw": {
+            "type": "string"
+        },
+        "woonplaats_nieuw": {
+            "type": "string"
+        },
+        "postcode_nieuw": {
+            "type": "string"
+        },
+        "verhuisdatum": {
+            "type": "string"
+        },
+        "aantal_pers_nieuw_adres": {
+            "type": "string"
+        },
+        "wijze_bewoning": {
+            "type": "string"
+        },
+        "bsn_hoofdbewoner": {
+            "type": "string"
+        },
+        "uittreksel": {
+            "type": "array",
+            "items": {
+                   "$ref": "#/definitions/Uittreksel"
+             }
+        },
+        "bsn_geheimhouding": {
+            "type": "string"
+        },
+        "code_geheimhouding": {
+            "type": "string"
+        },
+        "meeverhuizende_gezinsleden": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Meeverhuizers"
+            }
+        }
+    }
+}

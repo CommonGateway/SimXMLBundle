@@ -1,0 +1,39 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/sim.stuurgegevens.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "Stuurgegevens",
+    "type": "object",
+    "properties":{
+        "zaaktype": {
+            "type": "string"
+        },
+        "versie":{
+            "type": "string"
+        },
+        "berichttype": {
+            "type": "string"
+        },
+        "zender": {
+            "type": "string"
+        },
+        "ontvanger": {
+            "type": "string"
+        },
+        "sleutel": {
+            "type": "string"
+        },
+        "datum": {
+            "type": "string"
+        },
+        "berichtcode": {
+            "type": "string"
+        },
+        "referentienummer": {
+            "type": "string"
+        },
+        "entiteittype": {
+            "type": "string"
+        }
+    }
+}

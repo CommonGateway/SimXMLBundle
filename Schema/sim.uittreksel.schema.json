@@ -1,0 +1,18 @@
+{
+    "$id": "https://vng.opencatalogi.nl/schemas/sim.uittreksel.schema.json",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "version": "0.1",
+    "title": "Uittreksel",
+    "type": "object",
+    "properties":{
+        "bsn": {
+            "type": "string"
+        },
+        "code": {
+            "type": "string"
+        },
+        "omschrijving": {
+            "type": "string"
+        }
+    }
+}
