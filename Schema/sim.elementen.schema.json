@@ -85,7 +85,9 @@
         },
         "uittreksel": {
             "type": "array",
-            "$ref": "#/definitions/Uittreksel"
+            "items": {
+                   "$ref": "#/definitions/Uittreksel"
+             }
         },
         "bsn_geheimhouding": {
             "type": "string"
@@ -95,7 +97,9 @@
         },
         "meeverhuizende_gezinsleden": {
             "type": "array",
-            "$ref": "#/definitions/Meeverhuizers"
+            "items": {
+                "$ref": "#/definitions/Meeverhuizers"
+            }
         }
     }
 }

@@ -12,7 +12,10 @@
         "$ref": "#/definitions/Body"
       },
       "bijlagen": {
-        "$ref": "#/definitions/Bijlage"
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/Bijlage"
+        }
       },
       "zgwZaak": {
         "type": "string"
@@ -21,7 +24,7 @@
         "type": "array"
       },
       "parameters": {
-        "type": "array",
+        "type": "object",
         "items": {
           "mutatiesoort": {
             "type": "string"

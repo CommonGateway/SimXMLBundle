@@ -12,8 +12,8 @@
             "type": "string"
         },
         "inhoud": {
-            "type": "array",
-            "items": {
+            "type": "object",
+            "properties": {
                 "contentType": {
                     "type": "string"
                 },
